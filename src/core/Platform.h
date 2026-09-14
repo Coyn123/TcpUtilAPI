@@ -6,7 +6,7 @@
   using socket_t = SOCKET;
   inline constexpr socket_t kInvalidSocket = INVALID_SOCKET;
   inline constexpr int kFdExhausted = WSAEMFILE;
-  inline constexpr int kSysExhausted = WSAENFILE;
+  inline constexpr int kSysExhausted = WSAEMFILE;
   inline constexpr int kListenerBadFd = WSAEBADF;
   inline constexpr int kListenerNotSocket = WSAENOTSOCK;
   inline constexpr int kListenerOpNotSupported = WSAEOPNOTSUPP;
