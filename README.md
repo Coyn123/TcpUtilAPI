@@ -26,11 +26,13 @@ Swap `make_http_task` for your own `Connection -> unique_ptr<TaskBase>` factory 
 
 No build system yet — compile directly:
 
+### POSIX / UNIX
 ```bash
 g++ -std=c++20 -Isrc src/Main.cpp src/transport/*.cpp src/http/*.cpp src/tasks/*.cpp src/websocket/*.cpp src/util/*.cpp src/api/*.cpp -o server -pthread
 ```
 
-```windows
+### Windows
+```bash
 g++ -std=c++20 -Isrc src/Main.cpp src/transport/*.cpp src/http/*.cpp src/tasks/*.cpp src/websocket/*.cpp src/util/*.cpp src/api/*.cpp -o server -lws2_32
 ```
 
