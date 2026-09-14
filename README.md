@@ -30,7 +30,9 @@ No build system yet — compile directly:
 g++ -std=c++20 -Isrc src/Main.cpp src/transport/*.cpp src/http/*.cpp src/tasks/*.cpp src/websocket/*.cpp src/util/*.cpp src/api/*.cpp -o server -pthread
 ```
 
-On Windows (MinGW), swap `-pthread` for `-lws2_32`.
+```windows
+g++ -std=c++20 -Isrc src/Main.cpp src/transport/*.cpp src/http/*.cpp src/tasks/*.cpp src/websocket/*.cpp src/util/*.cpp src/api/*.cpp -o server -lws2_32
+```
 
 ## Status
 
